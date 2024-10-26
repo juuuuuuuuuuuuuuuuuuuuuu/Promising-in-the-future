@@ -1,21 +1,39 @@
 *{
     padding: 0;
     margin: 0;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-
 }
+.me{
+    color: inherit;
+    text-decoration: none;
+
+    padding: 5px 10px;
+    line-height: 1;
+    display: inline-block;
+}
+.me:hover {
+    text-decoration: none;
+
+    font-size: large;
+}
+
+#wrapper{
+    background-color: #A69281;
+}
+
 #head{
     width: 100%;
     height: 950px;
 
     background-image: url('back.jpg');
+
     background-color: rgba(0, 0, 0, 1);
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,11 +46,9 @@
     left: 0; /* 왼쪽 정렬 */
     right: 0; /* 오른쪽 정렬 */
     bottom: 0; /* 하단 정렬 */
-    background-color: rgba(0, 0, 0, 0.5); /* 검정색 반투명 오버레이 */
-    z-index: 1; /* 배경 이미지 위에 오버레이 위치 */
 }
 .header{
-    height: 50px;
+    height: 70px;
 
     display: flex;
     justify-content: space-between;
@@ -40,10 +56,12 @@
 
     position: relative; /* 헤더가 오버레이 위에 보이도록 설정 */
     z-index: 2; /* 헤더 내용을 오버레이 위에 표시 */
-    color: #F4F3EA; /* 텍스트 색상 (가독성을 위해) */
+    color: #FDF5E6; /* 텍스트 색상 (가독성을 위해) */
+
+    padding-top: 10px;
 }
 .logo p{
-    padding-left: 10px;
+    padding-left: 15px;
     font-weight: bold;
     font-size: 50px;
 }
@@ -52,8 +70,11 @@
 }
 .menu li{
     list-style-type: none;
-    padding-left: 15px;
-    padding-right: 15px;
+
+    height: 30px;
+    line-height: 30px;
+    min-width: 110px;
+    text-align: center;
 }
 .backgroud P{
     color: white;
@@ -63,40 +84,115 @@
 
     position: relative; /* 헤더가 오버레이 위에 보이도록 설정 */
     z-index: 2; /* 헤더 내용을 오버레이 위에 표시 */
-    color: #F4F3EA; /* 텍스트 색상 (가독성을 위해) */
+    color: #FDF5E6; /* 텍스트 색상 (가독성을 위해) */
 
 
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings: "wdth" 100;
     font-weight: 600;
 }
-
+/*여기까지 head*/
 #about{
+    width: 100%;
+    height: 950px;
+
+    background-color: #F4F3EA;
+
+    color: #A69281;
+
+    align-items: center;
+}
+#about .am{
+    text-align: center;
+    color: #A69281;
+
+    padding-top: 80px;
+    font-size: 100px;
+}
+#about .about-right{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proimg{
+    padding-right: 30px;
+}
+.proimg img{
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+}
+.contant h1{
+    font-size: 50px;
+}
+.contant p{
+    font-size: 25px;
+}
+.imogi .fa-brands{
+    font-size: 40px;
+    padding-right: 7px;
+}
+.ro{
+    text-decoration: none;
+    color: inherit;
+}
+.ro:hover {
+    text-decoration: none;
+    color: #8a796b;
+}
+/*여기까지 about*/
+#skills{
+    width: 100%;
+    height: 950px;
+
+    background-color: #A69281;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #F4F3EA;
+}
+.sk{
+    padding-top: 80px;
+}
+.sk p{
+    font-size: 100px;
+
+    text-align: center;
+}
+
+#projects{
     width: 100%;
     height: 950px;
 
     background-color: #F4F3EA;
 }
 
-#skills{
-    width: 100%;
-    height: 950px;
-}
-
-#projects{
-    width: 100%;
-    height: 950px;
-}
 
 #archiving{
     width: 100%;
     height: 950px;
+
+    background-color: #A69281;
+
+    background-image: url('ppp.jpg');
+
+    background-color: rgba(0, 0, 0, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
 }
 
 #ending{
     width: 100%;
     height: 950px;
+
+    background-color: #F4F3EA;
 }
