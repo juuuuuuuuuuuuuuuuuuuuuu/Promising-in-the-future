@@ -199,26 +199,32 @@ a:hover {
 }
 .box{
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
-.slidbox{
+.slider{
     width: 1100px;
     height: 500px;
     justify-content: center;
     align-items: center;
+
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;   /* 세로 가운데 정렬 */
+    margin-top: 0px;
 }
 .slider img {
     width: 1100px;  /* 원하는 너비 */
     height: 500px;  /* 원하는 높이 */
     border-radius: 20px;
 
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .controls {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 70px;
     color: #A08D7C;
 }
 button {
@@ -228,10 +234,15 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+    color: #A08D7C;
+    font-style: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #D4C4B4;
+    /*color: #F4F3EA;*/
 }
 #skills .box{
     width: 1200px;
@@ -264,6 +275,9 @@ button:hover {
     background-color: #A08D7C;
     color: #F4F3EA;
 
+    justify-content: center;
+    align-items: center;
+
     /*background-image: url('img3.jpg');
 
     background-color: rgba(0, 0, 0, 1);
@@ -278,6 +292,26 @@ button:hover {
     font-size: 100px;
 
     text-align: center;
+}
+.arcboxm{
+    justify-content: center;
+    align-items: center;
+}
+.arcbox{
+    width: 1300px;
+    height: 500px;
+    background-color: #F4F3EA;
+    border-radius: 20px;
+    color: #A08D7C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arcbox .fa-brands{
+    font-size: 300px;
+
+    padding-right: 100px;
 }
 
 #ending{
