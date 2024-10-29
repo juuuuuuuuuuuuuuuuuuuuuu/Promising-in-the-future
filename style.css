@@ -1,14 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings:"wdth" 100;
 }
 .button{
     position: sticky;
@@ -128,13 +127,13 @@ a:hover {
 
     background-color: #F4F3EA;
 
-    color: #A69281;
+    color: #A08D7C;
 
     align-items: center;
 }
 #about .am{
     text-align: center;
-    color: #A69281;
+    color: #A08D7C;
 
     padding-top: 80px;
     font-size: 100px;
@@ -170,27 +169,77 @@ a:hover {
 }
 .ro:hover {
     text-decoration: none;
-    color: #8a796b;
+    color: #A08D7C;
 }
 /*여기까지 about*/
 #skills{
     width: 100%;
     height: 950px;
 
-    background-color: #A69281;
+    background-color: #A08D7C;
 
     justify-content: center;
     align-items: center;
 
     color: #F4F3EA;
 }
-.sk{
+.ski{
     padding-top: 80px;
 }
-.sk p{
+.ski p{
     font-size: 100px;
 
     text-align: center;
+}
+.boxm{
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;   /* 세로 가운데 정렬 */
+    margin-top: 0px;
+}
+.box{
+    align-items: center;
+    justify-content: center;
+}
+.slidbox{
+    width: 1100px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.slider img {
+    width: 1100px;  /* 원하는 너비 */
+    height: 500px;  /* 원하는 높이 */
+    border-radius: 20px;
+
+    margin-top: 10px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #A08D7C;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #F4F3EA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D4C4B4;
+}
+#skills .box{
+    width: 1200px;
+    height: 600px;
+    background-color: #F4F3EA;
+    border-radius: 20px;
+
+    margin-top: 30px;
 }
 
 #projects{
@@ -198,23 +247,37 @@ a:hover {
     height: 950px;
 
     background-color: #F4F3EA;
+    color: #A08D7C;
 }
+.pro{
+    padding-top: 80px;
+}
+.pro p{
+    font-size: 100px;
 
-
+    text-align: center;
+}
 #archiving{
     width: 100%;
     height: 950px;
 
-    background-color: #A69281;
+    background-color: #A08D7C;
+    color: #F4F3EA;
 
-    background-image: url('ppp.jpg');
+    /*background-image: url('img3.jpg');
 
     background-color: rgba(0, 0, 0, 1);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
+}
+.arc{
+    padding-top: 80px;
+}
+.arc p{
+    font-size: 100px;
 
-    
+    text-align: center;
 }
 
 #ending{
@@ -222,4 +285,5 @@ a:hover {
     height: 950px;
 
     background-color: #F4F3EA;
+    color: #A08D7C;
 }
