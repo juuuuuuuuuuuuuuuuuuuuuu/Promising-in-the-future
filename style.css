@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
@@ -82,7 +82,7 @@ a:hover {
 
     position: relative; /* 헤더가 오버레이 위에 보이도록 설정 */
     z-index: 2; /* 헤더 내용을 오버레이 위에 표시 */
-    color: #FDF5E6; /* 텍스트 색상 (가독성을 위해) */
+    color: #F4F3EA; /* 텍스트 색상 (가독성을 위해) */
 
     padding-top: 10px;
 }
@@ -110,7 +110,7 @@ a:hover {
 
     position: relative; /* 헤더가 오버레이 위에 보이도록 설정 */
     z-index: 2; /* 헤더 내용을 오버레이 위에 표시 */
-    color: #FDF5E6; /* 텍스트 색상 (가독성을 위해) */
+    color: #F4F3EA; /* 텍스트 색상 (가독성을 위해) */
 
 
   font-family: "DynaPuff", system-ui;
@@ -172,6 +172,7 @@ a:hover {
     color: #A08D7C;
 }
 /*여기까지 about*/
+/*여기서부터 스킬*/
 #skills{
     width: 100%;
     height: 950px;
@@ -191,68 +192,37 @@ a:hover {
 
     text-align: center;
 }
-.boxm{
+.sboxm{
     display: flex;
-    justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center;   /* 세로 가운데 정렬 */
-    margin-top: 0px;
-}
-.box{
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
 }
-.slider{
-    width: 1100px;
+.sbox{
+    color: #A08D7C;
+    background-color: #F4F3EA;
+    border-radius: 20px;
+
+    width: 300px;
     height: 500px;
-    justify-content: center;
-    align-items: center;
 
-    display: flex;
-    justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center;   /* 세로 가운데 정렬 */
-    margin-top: 0px;
+    text-align: center;
 }
-.slider img {
-    width: 1100px;  /* 원하는 너비 */
-    height: 500px;  /* 원하는 높이 */
-    border-radius: 20px;
-
-    margin-top: 30px;
+.sbox .rogi{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.sbox p{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    color: #A08D7C;
-}
-button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #F4F3EA;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-
-    color: #A08D7C;
-    font-style: bold;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #D4C4B4;
-    /*color: #F4F3EA;*/
-}
-#skills .box{
-    width: 1200px;
-    height: 600px;
-    background-color: #F4F3EA;
-    border-radius: 20px;
-
-    margin-top: 30px;
-}
-
+/*여기서부터 프로젝트*/
 #projects{
     width: 100%;
     height: 950px;
@@ -294,6 +264,7 @@ button:hover {
     text-align: center;
 }
 .arcboxm{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -308,16 +279,130 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
+.arcbox .git{
+    font-size: 30px;
+}
 .arcbox .fa-brands{
     font-size: 300px;
 
     padding-right: 100px;
+
+    text-decoration: none;
+    color: inherit;
+}
+.arcbox .fa-brands{
+    text-decoration: none;
+    color: #A08D7C;
+}
+.boxm{
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;   /* 세로 가운데 정렬 */
+    margin-top: 0px;
+}
+.box{
+    align-items: center;
+    justify-content: space-between;
+}
+.slider{
+    width: 1100px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;   /* 세로 가운데 정렬 */
+    margin-top: 0px;
+}
+.slider img {
+    width: 1100px;  /* 원하는 너비 */
+    height: 500px;  /* 원하는 높이 */
+    border-radius: 20px;
+
+    box-shadow: 0px 4px 20px #A08D7C;
+
+    margin-top: 30px;
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    color: #A08D7C;
+}
+.controls span{
+    width: 35px;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #F4F3EA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    color: #A08D7C;
+    font-style: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D4C4B4;
+    /*color: #F4F3EA;*/
+}
+#skills .box{
+    width: 1200px;
+    height: 600px;
+    background-color: #F4F3EA;
+    border-radius: 20px;
+
+    margin-top: 30px;
+}
+
+
+/*여기서부터 엔딩*/
 #ending{
     width: 100%;
     height: 950px;
 
     background-color: #F4F3EA;
     color: #A08D7C;
+
+    margin: 0 auto;
+}
+#ending p{
+    font-size: 100px;
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+    color: #A08D7C;
+
+    padding-top: 300px;
+}
+.endb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+}
+#ending button{
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+    
+    background-color: #A08D7C;
+    color: #F4F3EA;
+
+    transition: background-color 0.5s ease;
+
+    margin: 0 auto;
+   
+}
+#ending button:hover{
+    color: #F4F3EA;
+    background-color: rgb(131, 113, 87);
 }
