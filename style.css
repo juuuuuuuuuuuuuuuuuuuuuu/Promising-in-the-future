@@ -9,6 +9,7 @@
   font-style: normal;
   font-variation-settings:"wdth" 100;
 }
+/* http://localhost:5500/ */
 .button{
     position: sticky;
     bottom: 0;
@@ -33,7 +34,7 @@
     align-items: center;
 
 }
-a:hover {
+.imogi a:hover {
     color: rgb(131, 113, 87);
 }
 .me{
@@ -159,6 +160,9 @@ a:hover {
 .contant p{
     font-size: 25px;
 }
+.imogi{
+    transition: background-color 0.5s ease;
+}
 .imogi .fa-brands{
     font-size: 40px;
     padding-right: 7px;
@@ -197,8 +201,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
     margin-top: 50px;
 }
 .sbox{
@@ -210,6 +214,8 @@ a:hover {
     height: 500px;
 
     text-align: center;
+
+    transition: transform 0.3s ease;
 }
 .sbox .rogi{
     font-size: 30px;
@@ -220,6 +226,9 @@ a:hover {
     font-size: 20px;
     margin-left: 15px;
     margin-right: 15px;
+}
+.sbox:hover{
+    transform: scale(1.1);
 }
 
 /*여기서부터 프로젝트*/
@@ -405,4 +414,27 @@ button:hover {
 #ending button:hover{
     color: #F4F3EA;
     background-color: rgb(131, 113, 87);
+}
+
+/*------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* 작은 화면에서는 세로로 배치 */
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0; /* 세로 배치 시 여백 조정 */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* 작은 화면에서 글자 크기 조정 */
+    }
+    
+    header p {
+        font-size: 16px; /* 작은 화면에서 글자 크기 조정 */
+    }
 }
